@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOLLI VAMSI KRISHNA - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">VAMSI</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background Effects -->
+    <div class="bg-circuit"></div>
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-profile">
+                <div class="profile-image-wrapper">
+                    <div class="profile-image"></div>
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+            <h1 class="hero-title">MOLLI VAMSI KRISHNA</h1>
+            <p class="hero-subtitle">Final Year B.Tech Student at RGUKT</p>
+            <div class="hero-typing">
+                <span id="typing-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate final year B.Tech student at Rajiv Gandhi University of Knowledge Technologies (RGUKT), specializing in the intersection of electronics, blockchain technology, IoT, and trading markets.</p>
+                    <p>My journey combines academic excellence with practical innovation, focusing on building solutions that bridge the gap between emerging technologies and real-world applications. From smart IoT systems to blockchain applications and AI-driven trading strategies, I'm committed to pushing the boundaries of what's possible.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Courses & Certifications</h2>
+            <div class="cert-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="NPTEL">NPTEL</button>
+                <button class="filter-btn" data-filter="GeeksforGeeks">GeeksforGeeks</button>
+                <button class="filter-btn" data-filter="AI/ML">AI/ML</button>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card" data-category="NPTEL">
+                    <div class="cert-header">
+                        <h3>Embedded Sensing and Actuation</h3>
+                        <span class="cert-provider">NPTEL (IIT)</span>
+                    </div>
+                    <div class="cert-body">
+                        <p class="cert-duration">12 weeks</p>
+                        <p class="cert-description">Comprehensive course covering integration of sensing and actuation units with embedded controllers, MEMS devices, interface electronics, and smart sensors</p>
+                        <div class="cert-skills">
+                            <span class="skill-tag">MEMS Technology</span>
+                            <span class="skill-tag">Smart Sensors</span>
+                            <span class="skill-tag">Interface Electronics</span>
+                            <span class="skill-tag">Embedded Control Systems</span>
+                        </div>
+                        <p class="cert-credibility">Government-backed program from India's premier IITs with industry recognition</p>
+                    </div>
+                </div>
+
+                <div class="cert-card" data-category="NPTEL">
+                    <div class="cert-header">
+                        <h3>Machine Learning for Science Applications</h3>
+                        <span class="cert-provider">NPTEL (IIT Madras)</span>
+                    </div>
+                    <div class="cert-body">
+                        <p class="cert-duration">12 weeks</p>
+                        <p class="cert-description">Advanced ML course focusing on deep learning, CNNs, RNNs, and practical implementation for engineering applications</p>
+                        <div class="cert-skills">
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">CNNs</span>
+                            <span class="skill-tag">RNNs</span>
+                            <span class="skill-tag">Python Programming</span>
+                            <span class="skill-tag">TensorFlow</span>
+                        </div>
+                        <p class="cert-credibility">IIT Madras certification recognized for ML expertise in scientific applications</p>
+                    </div>
+                </div>
+
+                <div class="cert-card" data-category="GeeksforGeeks">
+                    <div class="cert-header">
+                        <h3>Embedded Systems</h3>
+                        <span class="cert-provider">GeeksforGeeks</span>
+                    </div>
+                    <div class="cert-body">
+                        <p class="cert-duration">Self-paced</p>
+                        <p class="cert-description">Comprehensive embedded systems programming covering microcontrollers, real-time systems, and hardware interfacing</p>
+                        <div class="cert-skills">
+                            <span class="skill-tag">Microcontroller Programming</span>
+                            <span class="skill-tag">Real-time Systems</span>
+                            <span class="skill-tag">Hardware Interfacing</span>
+                            <span class="skill-tag">C Programming</span>
+                        </div>
+                        <p class="cert-credibility">Platform serving 12M+ users with partnerships from 150+ companies including Microsoft, Google, Amazon</p>
+                    </div>
+                </div>
+
+                <div class="cert-card" data-category="GeeksforGeeks">
+                    <div class="cert-header">
+                        <h3>C++ Programming</h3>
+                        <span class="cert-provider">GeeksforGeeks</span>
+                    </div>
+                    <div class="cert-body">
+                        <p class="cert-duration">Self-paced</p>
+                        <p class="cert-description">Advanced C++ programming certification covering OOP concepts, data structures, and algorithmic problem solving</p>
+                        <div class="cert-skills">
+                            <span class="skill-tag">Object-Oriented Programming</span>
+                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag">Algorithms</span>
+                            <span class="skill-tag">Problem Solving</span>
+                        </div>
+                        <p class="cert-credibility">Industry-recognized programming certification from leading tech education platform</p>
+                    </div>
+                </div>
+
+                <div class="cert-card" data-category="AI/ML">
+                    <div class="cert-header">
+                        <h3>TensorFlow for Machine Learning and Deep Learning</h3>
+                        <span class="cert-provider">DeepLearning.AI / Google</span>
+                    </div>
+                    <div class="cert-body">
+                        <p class="cert-duration">4 courses</p>
+                        <p class="cert-description">Professional certificate program for building scalable AI applications with TensorFlow framework</p>
+                        <div class="cert-skills">
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Neural Networks</span>
+                            <span class="skill-tag">Computer Vision</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Time Series Analysis</span>
+                        </div>
+                        <p class="cert-credibility">Google-backed professional credential preparing for Google TensorFlow Certificate exam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
+                <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+                <button class="filter-btn" data-filter="trading">Trading</button>
+            </div>
+            <div class="project-grid">
+                <div class="project-card" data-category="iot">
+                    <div class="project-header">
+                        <h3>Smart IoT Home Automation</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p>Comprehensive home automation solution using IoT sensors, microcontrollers, and mobile app integration</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">Raspberry Pi</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">React Native</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="blockchain">
+                    <div class="project-header">
+                        <h3>Blockchain Supply Chain Tracker</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p>Transparent and immutable supply chain tracking system built on Ethereum blockchain</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Solidity</span>
+                            <span class="tech-tag">Web3.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">IPFS</span>
+                            <span class="tech-tag">MetaMask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="trading">
+                    <div class="project-header">
+                        <h3>AI Crypto Trading Bot</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p>Machine learning based cryptocurrency trading bot with automated strategy execution</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">ccxt</span>
+                            <span class="tech-tag">Technical Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="iot">
+                    <div class="project-header">
+                        <h3>Environmental Monitoring System</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p>Real-time environmental data collection and analysis using IoT sensors and cloud storage</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">LoRaWAN</span>
+                            <span class="tech-tag">AWS IoT</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="blockchain">
+                    <div class="project-header">
+                        <h3>DeFi Analytics Platform</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p>Comprehensive DeFi protocol analytics and yield farming optimization platform</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Web3</span>
+                            <span class="tech-tag">The Graph</span>
+                            <span class="tech-tag">DeFi Protocols</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C++</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Solidity</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Hardware</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Arduino</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Raspberry Pi</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">PCB Design</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MEMS Sensors</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Blockchain</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Smart Contracts</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Web3 Development</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">DeFi Protocols</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">IPFS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="65"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Trading</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Technical Analysis</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MetaTrader</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Risk Management</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Algorithmic Trading</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="70"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Insights</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-header">
+                        <span class="blog-category">Blockchain</span>
+                        <span class="blog-date">Dec 15, 2024</span>
+                    </div>
+                    <h3>The Future of DeFi in 2025</h3>
+                    <p>Exploring upcoming trends and innovations in decentralized finance protocols and yield strategies</p>
+                    <a href="#" class="blog-link">Read More</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-header">
+                        <span class="blog-category">IoT</span>
+                        <span class="blog-date">Dec 10, 2024</span>
+                    </div>
+                    <h3>IoT Security Best Practices</h3>
+                    <p>Essential security considerations when developing IoT applications and connected devices</p>
+                    <a href="#" class="blog-link">Read More</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-header">
+                        <span class="blog-category">Trading</span>
+                        <span class="blog-date">Dec 5, 2024</span>
+                    </div>
+                    <h3>Technical Analysis in Cryptocurrency Trading</h3>
+                    <p>Advanced charting techniques and indicators for effective crypto market analysis</p>
+                    <a href="#" class="blog-link">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>vamsimolli4@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Mobile</h4>
+                            <p>+91 7842774022</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🎓</div>
+                        <div>
+                            <h4>University</h4>
+                            <p>Rajiv Gandhi University of Knowledge Technologies</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/vamsimolli" target="_blank" class="social-link">GitHub</a>
+                        <a href="https://linkedin.com/in/vamsimolli" target="_blank" class="social-link">LinkedIn</a>
+                        <a href="https://twitter.com/vamsimolli" target="_blank" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
